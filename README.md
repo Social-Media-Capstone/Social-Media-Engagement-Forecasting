@@ -132,6 +132,48 @@ To prepare the data for exploration and modeling we performed the following step
 
 
 # Project Planning <a name="plan"></a>
+# Planning
+day 1 Sep 14
+- [x] Planning
+- [x] Tiktok API - Brad
+
+day 2 Sep 15
+- [x] Tiktok Acquisition MVP - Meredith
+
+day 3 Friday - Sep 16
+- [x] Acquisition - Meredith, Brad
+
+day 4 Monday - Sep 19
+- [x] Preparation - all
+- [x] Target variable
+- [x] Define Questions
+- [x] Explore starting - all
+
+day 5-6 Spe 20-21
+- [ ] Explore done
+- [ ] Modeling
+- [ ] MVP done
+
+day 7
+- [ ] presentation starting
+
+day 8-9
+- [ ] presentation done - Jess
+- [ ] final report - Jess
+- [ ] readme structure - Saroj
+- [ ] webpage - Meredith/Jess
+- [ ] dashboard - Brad
+
+day 10 - Sep 27
+- [ ] Review panels - feedback collection
+
+day 14-15 - Oct 4, 5
+- [ ] Polish
+
+day 16 Oct 6
+
+day 17 Oct 7
+- [ ] final
 
 ## Exploration
 
