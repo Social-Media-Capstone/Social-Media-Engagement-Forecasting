@@ -138,8 +138,8 @@ To prepare the data for exploration and modeling we performed the following step
 # Project Planning <a name="plan"></a>
 
 ## Exploration
-
-## Initial Hypotheses
+## Initial Questions
+- Overall distribution of video duration of Tiktok?
 - Is there pattern/seasonality in Tiktok engagement statistics for each category?
 - Is engagement statisticss dependent on category?
 - Does engagement depends on video duration? (Audience’s attention span/algorithm is pushing a certain length of video)
