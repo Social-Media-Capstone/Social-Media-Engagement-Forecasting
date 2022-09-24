@@ -21,7 +21,7 @@ Date: 09/23/2022
 
 
 # About the project <a name="project_desc"></a>
-Using 
+(EDITING...) 
 
 ## Scenario <a name="scenario"></a>
 
@@ -34,14 +34,13 @@ This project serves as a proof of concept to demonstrate the viability of these 
 
 ## Goals <a name="goals"></a>
 
-analyze  top four different categories from popular platform TikTok.  Engineer features from the project's README.md file using TF and IDF, as well as the occurrance of certain keywords inside of a document.
 
 ### Deliverables <a name="deliverables"></a>
 
-- Report notebook titled `Report.ipynb`
-- Google/canva Slides presentation consisting content slides.
-- project webpage
-- project white paper
+- Report notebook titled `final_report.ipynb`
+- Slide presentation for technical and non-technical skateholders
+- Webpage with interactive dashboard
+- Project white paper for non-technical audience
 
 ## Reproducing this project <a name="requirements"></a>
 
@@ -66,6 +65,8 @@ This project makes use of several technologies that will need to be installed
     ](https://scipy.org/)
 * [![sklearn-shield](https://img.shields.io/badge/_-grey?logo=scikitlearn&logoColor=white&label=scikit-learn)
     ](https://scikit-learn.org/stable/)
+* [![prophet-shield](https://img.shields.io/badge/_-grey?logo=Facebookprophet&logoColor=white&label=prophet)
+    ](https://scikit-learn.org/stable/)   
 * [![nltk-shield](https://img.shields.io/badge/NLTK-grey?&logo=&logoColor=white)
     ](https://textblob.readthedocs.io/en/dev/)
 * [![xgboost-shield](https://img.shields.io/badge/XGBoost-grey?&logo=&logoColor=white)
