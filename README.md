@@ -2,7 +2,8 @@
 
 # Social  Media Engagement Forecasting
 By : **Brad Gauvin, Jess Gardin, Meredith Wang, and Saroj Duwal**
-Date: 09/23/2022
+
+Date: 09/2022 - present
 
 ## Readme Outline
 - [Project Description](#project_desc)  
