@@ -137,7 +137,11 @@ To prepare the data for exploration and modeling we performed the following step
 
 # Project Planning <a name="plan"></a>
 
+
 ## Exploration
+
+![roughviz](https://user-images.githubusercontent.com/105242871/192079926-96185ad2-505d-4181-8556-ab94c867f2b5.gif)
+
 ## Initial Questions
 - Overall distribution of video duration of Tiktok?
 - Is there pattern/seasonality in Tiktok engagement statistics for each category?
