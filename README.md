@@ -1,6 +1,9 @@
-# Tiktok-Youtube-Instagram-Forecasting
-By Brad Gauvin, Jess Gardin, Meredith Wang, and Saroj Duwal
-Date: 09/23/2022
+
+
+# Social  Media Engagement Forecasting
+By : **Brad Gauvin, Jess Gardin, Meredith Wang, and Saroj Duwal**
+
+Date: 09/2022 - present
 
 ## Readme Outline
 - [Project Description](#project_desc)  
@@ -11,15 +14,15 @@ Date: 09/23/2022
 
 - [About the data](#data)
     - Scope
-    - Acquisition
-    - Preparation
+    - Acquiring
+    - Preparing
     - Data Dictionary
 
 - [Project Planning](#plan)  
 
 
 # About the project <a name="project_desc"></a>
-Using 
+(EDITING...) 
 
 ## Scenario <a name="scenario"></a>
 
@@ -32,14 +35,13 @@ This project serves as a proof of concept to demonstrate the viability of these 
 
 ## Goals <a name="goals"></a>
 
-analyze  top four different categories from popular platform TikTok.  Engineer features from the project's README.md file using TF and IDF, as well as the occurrance of certain keywords inside of a document.
 
 ### Deliverables <a name="deliverables"></a>
 
-- Report notebook titled `Report.ipynb`
-- Google/canva Slides presentation consisting content slides.
-- project webpage
-- project white paper
+- Report notebook titled `final_report.ipynb`
+- Slide presentation for technical and non-technical skateholders
+- Webpage with interactive dashboard
+- Project white paper for non-technical audience
 
 ## Reproducing this project <a name="requirements"></a>
 
@@ -64,6 +66,8 @@ This project makes use of several technologies that will need to be installed
     ](https://scipy.org/)
 * [![sklearn-shield](https://img.shields.io/badge/_-grey?logo=scikitlearn&logoColor=white&label=scikit-learn)
     ](https://scikit-learn.org/stable/)
+* [![prophet-shield](https://img.shields.io/badge/_-grey?logo=Facebookprophet&logoColor=white&label=prophet)
+    ](https://scikit-learn.org/stable/)   
 * [![nltk-shield](https://img.shields.io/badge/NLTK-grey?&logo=&logoColor=white)
     ](https://textblob.readthedocs.io/en/dev/)
 * [![xgboost-shield](https://img.shields.io/badge/XGBoost-grey?&logo=&logoColor=white)
@@ -83,7 +87,7 @@ Dependencies can be installed quickly with just a few lines of code.
 %pip install sklearn
 %pip install nltk
 %pip install xgboost
-%pip install textblob
+%pip install youtube-search-python
 ```
 
 # About the data <a name="data"></a>
@@ -94,22 +98,24 @@ We scraped tiktok webpage using a third party API called TikAPI using top four c
 
 For exploration and modeling we ignored any repositories featuring a language for which we did not scrape at least 10 samples, as well as any repositories that did not feature a language at all.
 
-## Acquisition
+## Acquiring
 
-- "env.py" has API key credentials to access the data from tiktok API
-- Data acquisition used a combination of web-scraping and TikAPI  from the "acquire.py" module.
-- Acquire module collects follow counts, like counts and play counts.
-- 
+- "env.py" has API key credentials to access the data from tiktok API, youtube API and Instagram API
+- Data acquisition contains 3 platforms: Tiktok, Youtube, Instagram; 5 categories: Fahion & Beauty, Humor, Political Contents, Food, Fitness & Lifestyle
+- Tiktok data is acquired through TikAPI, using search hashtag and search top influencers approach, detailed steps please reference acquire editing
+- Youtube data is acquired through functions inside youtube-search-python 1.6.6 (built-in Python library), detailed steps please reference acquire editing
+- Instagram data is acquired and extracted through an existing dataset. We used automated data extraction to go through 1.5 million json files and condensed useful information into a dataframe.
 
-## Preparation
+## Preparing
 
 To prepare the data for exploration and modeling we performed the following steps:
-- Markdown links were removed from the corpus since the urls did not provide meaningful information
-- HTML elements such as \<li>\</li> and \<strong>\</strong> were also removed for the same reason
-- The text was then normalized and stripped of special characters
-- Stopwords were removed
-- New columns were created in the dataframe to represent the cleaned and lemmatized versions of the original
-- Split the data into train, validate and test sets and stratify by the language
+- All the missing values were dropped as only one row was missing the value
+- Converted date to datetime object
+- Converted object to integer datatype
+- set date as index of the dataframe 
+- Created new column hour, minute, second corresponding to duration and transform them into length in seconds
+- Columns that were deemed unuseful were dropped
+- Split the data into train, validate and test sets 
     - Train : 64 % of the data
     - Validate : 16 % of the data
     - Test : 20 % of the data
@@ -132,65 +138,29 @@ To prepare the data for exploration and modeling we performed the following step
 
 
 # Project Planning <a name="plan"></a>
-# Planning
-day 1 Sep 14
-- [x] Planning
-- [x] Tiktok API - Brad
 
-day 2 Sep 15
-- [x] Tiktok Acquisition MVP - Meredith
-
-day 3 Friday - Sep 16
-- [x] Acquisition - Meredith, Brad
-
-day 4 Monday - Sep 19
-- [x] Preparation - all
-- [x] Target variable
-- [x] Define Questions
-- [x] Explore starting - all
-
-day 5-6 Spe 20-21
-- [ ] Explore done
-- [ ] Modeling
-- [ ] MVP done
-
-day 7
-- [ ] presentation starting
-
-day 8-9
-- [ ] presentation done - Jess
-- [ ] final report - Jess
-- [ ] readme structure - Saroj
-- [ ] webpage - Meredith/Jess
-- [ ] dashboard - Brad
-
-day 10 - Sep 27
-- [ ] Review panels - feedback collection
-
-day 14-15 - Oct 4, 5
-- [ ] Polish
-
-day 16 Oct 6
-
-day 17 Oct 7
-- [ ] final
 
 ## Exploration
 
-## Initial Hypotheses
-- Covid-19 Pandemic resulted in spike of tiktok use
-- Use of certain hashtags under particular categories
-- 
+![roughviz](https://user-images.githubusercontent.com/105242871/192079926-96185ad2-505d-4181-8556-ab94c867f2b5.gif)
+
+## Initial Questions
+- Overall distribution of video duration of Tiktok?
+- Is there pattern/seasonality in Tiktok engagement statistics for each category?
+- Is engagement statisticss dependent on category?
+- Does engagement depends on video duration? (Audience’s attention span/algorithm is pushing a certain length of video)
+- Does major political event cause peak in engagement?
+
 
 ## Modeling
-- Created a time seriesmodel against which all models will be evaluated.
-- 12 different models were compared against the baseline and model with the highest overall accuracy score was used to evaluate the test data set.
+- Created a time seriesmodel baseline against which all models will be evaluated.
+- 'X number' of models were created and compared 
 
 
 # Conclusion
 ### Summary
 
-In seeking to predict programming language for GitHub repositories, we have explored our data thoroughly. \
+In seeking to predict social media engagement forecasting, we have explored our data thoroughly. \
 We observed word clouds, word frequencies, and ran sentiment analyses in order to best determine any additional feature engineering that would improve our model. Although we were not able to identify any additional significant features to engineer from this exploration, we were able to identify problem areas and eliminate a host of stopwords which resulted in improved modeling.
 
 Additionally, we have created and tested 12 different models on both uncleaned and cleaned and lemmatized data. Our 3 best performing models are:
@@ -211,3 +181,4 @@ If given more time to pursue better results, we could perform further investigat
 1. Estimating each readme's school reading level. Not only would this be interesting as an anecdote, if proven useful, it could be imputed as a new feature to boost the accuracy of our model.
 
 2. Handling ReadMes in a foreign language in a more succinct way. This could be handled more effectively by using a translator to convert all ReadMes into English for potentially better modeling accuracy. 
+
