@@ -1,15 +1,14 @@
 
 
 # Social  Media Engagement Forecasting
-By : **Brad Gauvin, Jess Gardin, Meredith Wang, and Saroj Duwal**
+By : **[Brad Gauvin](https://github.com/bradgauvin), [Jess Gardin](https://github.com/Jgardin875), [Meredith Wang](https://github.com/m3redithw),  [Saroj Duwal](https://github.com/Saroj6632)**
 
 Date: 09/2022 - present
 
-## Readme Outline
+## Table of Content
 - [Project Description](#project_desc)  
-    - [Scenario](#scenario)
     - [Goals](#goals)
-        - [Deliverables](#deliverables)
+    - [Deliverables](#deliverables)
     - [Project Dependencies](#dependencies)
 
 - [About the data](#data)
@@ -21,7 +20,7 @@ Date: 09/2022 - present
 - [Project Planning](#plan)  
 
 
-# About the project <a name="project_desc"></a>
+# Project Description <a name="project_desc"></a>
 (EDITING...) 
 
 ## Scenario <a name="scenario"></a>
@@ -153,7 +152,7 @@ To prepare the data for exploration and modeling we performed the following step
 
 
 ## Modeling
-- Created a time seriesmodel baseline against which all models will be evaluated.
+- Created a time series model baseline against which all models will be evaluated.
 - 'X number' of models were created and compared 
 
 
@@ -161,13 +160,8 @@ To prepare the data for exploration and modeling we performed the following step
 ### Summary
 
 In seeking to predict social media engagement forecasting, we have explored our data thoroughly. \
-We observed word clouds, word frequencies, and ran sentiment analyses in order to best determine any additional feature engineering that would improve our model. Although we were not able to identify any additional significant features to engineer from this exploration, we were able to identify problem areas and eliminate a host of stopwords which resulted in improved modeling.
+We observed word clouds, word frequencies, and ran sentiment analyses in order to best determine any additional feature engineering that would improve our model. 
 
-Additionally, we have created and tested 12 different models on both uncleaned and cleaned and lemmatized data. Our 3 best performing models are:
-
-1. Neural Network (not explicitly shown in this final notebook)
-2. SVM Linear
-3. XGBoost Classifier
 
 In short, we found that our XGBoost Classifier model performed best on our uncleaned data, resulting in 58% accuracy on our test data. \
 This performance beats our baseline by 115%.
