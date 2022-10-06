@@ -33,11 +33,19 @@ TikTok, a video sharing social media platform, funded in 2016 has gained tremedo
 ## Business Goal<a name="business_goal"></a>
 
 ## Initial Questions<a name="questions"></a>
-- Overall distribution of video duration of Tiktok?
-- Is there pattern/seasonality in Tiktok engagement statistics for each category?
-- Is engagement statisticss dependent on category?
-- Does engagement depends on video duration? (Audience’s attention span/algorithm is pushing a certain length of video)
-- Does major political event cause peak in engagement?
+▪️ What does trending video's duration distribution look like? Is most vidoes on TikTok short (<15?)
+
+▪️ Is the avg. video duration of a category more than the other? If so, which video length drives the highest engagement for each category?
+
+▪️ What's the avg engagement metrics of trending vidoe's in the past two years?
+
+▪️ Where does TikTok stand compared to YouTube and Instagram?
+
+▪️ Is a certian category's engagement significant more than the other?
+
+▪️ Does creator's follower size correlate with engagement?
+
+▪️ Are there certain key words/hashtags that drive engagement?
 
 ## Deliverables <a name="deliverables"></a>
 
