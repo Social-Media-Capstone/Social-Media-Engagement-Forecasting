@@ -7,9 +7,9 @@ Date: 09/2022 - present
 
 ## Table of Content
 - [Project Description](#project_desc)
-- [Business Goal]
-- [Deliverables]
-- [Dependencies]
+- [Business Goal](#business_goal)
+- [Deliverables](#deliverables)
+- [Dependencies](#dependencies)
 
 - [Process](#data)
     - Planning
@@ -28,27 +28,22 @@ Date: 09/2022 - present
 TikTok, a video sharing social media platform, funded in 2016 has gained tremedous amount of popularity over the past few years.
 (EDITING...)
 
-# Business Goal
+# Business Goal<a name="business_goal"></a>
 
 
 # Deliverables <a name="deliverables"></a>
 
-- Report Notebook titled `final_report.ipynb`
-- Slide presentation for technical and non-technical skateholders
+- Report Notebook `final_report.ipynb`
 - Web app with interactive dashboard
+- Slide presentation for technical and non-technical skateholders
 - Project white paper for non-technical audience
 
-# Reproducing this project <a name="requirements"></a>
+# Requirements <a name="requirements"></a>
 
-<!-- Add NLTK and the NLTK downloads -->
+Before you run this notebook, please ensure you have the below packages installed.
 
-### Dependencies
-
-This project makes use of several technologies that will need to be installed
 * [![python-shield](https://img.shields.io/badge/Python-3-blue?&logo=python&logoColor=white)
     ](https://www.python.org/)
-* [![jupyter-shield](https://img.shields.io/badge/Jupyter-notebook-orange?logo=jupyter&logoColor=white)
-    ](https://jupyter.org/)
 * [![numpy-shield](https://img.shields.io/badge/Numpy-grey?&logo=numpy)
     ](https://numpy.org/)
 * [![pandas-shield](https://img.shields.io/badge/Pandas-grey?&logo=pandas)
@@ -57,6 +52,8 @@ This project makes use of several technologies that will need to be installed
     ](https://matplotlib.org)
 * [![seaborn-shield](https://img.shields.io/badge/Seaborn-grey?&logoColor=white)
     ](https://seaborn.pydata.org/)
+* [![plotly-shield](https://img.shields.io/badge/Plotly-grey?&logoColor=white)
+    ]([https://seaborn.pydata.org/](https://plotly.com/python/))
 * [![scipy-shield](https://img.shields.io/badge/SciPy-grey?&logo=scipy&logoColor=white)
     ](https://scipy.org/)
 * [![sklearn-shield](https://img.shields.io/badge/_-grey?logo=scikitlearn&logoColor=white&label=scikit-learn)
