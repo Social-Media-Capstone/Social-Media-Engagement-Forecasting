@@ -1,82 +1,93 @@
 
 
 # Social  Media Engagement Forecasting
-By : **Brad Gauvin, Jess Gardin, Meredith Wang, and Saroj Duwal**
+By : **[Brad Gauvin](https://github.com/bradgauvin), [Jess Gardin](https://github.com/Jgardin875), [Meredith Wang](https://github.com/m3redithw),  [Saroj Duwal](https://github.com/Saroj6632)**
 
 Date: 09/2022 - present
 
-## Readme Outline
-- [Project Description](#project_desc)  
-    - [Scenario](#scenario)
-    - [Goals](#goals)
-        - [Deliverables](#deliverables)
-    - [Project Dependencies](#dependencies)
+# Table of Content
+- [Project Description](#project_desc)
+    - [Business Goal](#business_goal)
+    - [Initial Questions](#questions)
+    - [Deliverables](#deliverables)
+    - [Dependencies](#dependencies)
+    - [Data Dictionary](#data)
 
-- [About the data](#data)
-    - Scope
-    - Acquiring
-    - Preparing
-    - Data Dictionary
-
-- [Project Planning](#plan)  
-
-
-# About the project <a name="project_desc"></a>
-(EDITING...) 
-
-## Scenario <a name="scenario"></a>
-
-This project serves as a proof of concept to demonstrate the viability of these types of classification problems using free-form text as an input.
-
-<!-- > __Agile Story__  
-    As a {persona}  
-    I want {feature}  
-    So that {goal}   -->
-
-## Goals <a name="goals"></a>
+- [Process](#process)
+    - [Acquisition](#acquisition)
+    - [Preparation](#preparation)
+    - [Exploration](#exploration)
+    - [Modeling](#modeling)
+    
+- [Conclusion](#conclusion)
+    - [Key Findings](#key_findings)
+    - [Future Development](#next_steps)
 
 
-### Deliverables <a name="deliverables"></a>
+# Project Description <a name="project_desc"></a>
+TikTok, a video sharing and relatively new social media platform (funded in 2016), has gained tremendous amount of popularity over the past few years. Understanding their "success metric" and knowing how to attract engagement is extremely important for business and individuals who want to develop their presence on there.
 
-- Report notebook titled `final_report.ipynb`
+Along with other deliveralbes, a [web APP](https://m3redithw-streamlit-home-4vvfud.streamlitapp.com/) with interactive dashboard is developed as an additional component to the project for both technical and non-technical skate-holders to grasp the key findings.
+
+## Business Goal<a name="business_goal"></a>
+We used time series models to forecast engagement over time, along with natural language processing regression models to predict the key words that are likely to generate viral content. E-commerce, retail businesses, influencers, etc. can stratigically utilize ourpredictive model to push out content that would gain the most branded-effect possible with worlwide audience and generate revenue.
+
+## Initial Questions<a name="questions"></a>
+▪️ What does trending video's duration distribution look like? Is most vidoes on TikTok short (<15?)
+
+▪️ Is the avg. video duration of a category more than the other? If so, which video length drives the highest engagement for each category?
+
+▪️ What's the avg engagement metrics of trending vidoe's in the past two years?
+
+▪️ Where does TikTok stand compared to YouTube and Instagram?
+
+▪️ Is a certian category's engagement significant more than the other?
+
+▪️ Does creator's follower size correlate with engagement?
+
+▪️ Are there certain key words/hashtags that drive engagement?
+
+## Deliverables <a name="deliverables"></a>
+
+- Report Notebook `final_report.ipynb`
+- Web app with interactive dashboard
 - Slide presentation for technical and non-technical skateholders
-- Webpage with interactive dashboard
 - Project white paper for non-technical audience
 
-## Reproducing this project <a name="requirements"></a>
+## Requirements <a name="requirements"></a>
 
-<!-- Add NLTK and the NLTK downloads -->
+Before you run this notebook, please ensure you have the below packages installed.
 
-### Dependencies
-
-This project makes use of several technologies that will need to be installed
-* [![python-shield](https://img.shields.io/badge/Python-3-blue?&logo=python&logoColor=white)
+* [![python-shield](https://img.shields.io/badge/Python-dfaeff?&logo=python&logoColor=white)
     ](https://www.python.org/)
-* [![jupyter-shield](https://img.shields.io/badge/Jupyter-notebook-orange?logo=jupyter&logoColor=white)
-    ](https://jupyter.org/)
-* [![numpy-shield](https://img.shields.io/badge/Numpy-grey?&logo=numpy)
+* [![numpy-shield](https://img.shields.io/badge/Numpy-dfaeff?&logo=NumPy)
     ](https://numpy.org/)
-* [![pandas-shield](https://img.shields.io/badge/Pandas-grey?&logo=pandas)
+* [![pandas-shield](https://img.shields.io/badge/Pandas-dfaeff?&logo=pandas)
     ](https://pandas.pydata.org/)
-* [![matplotlib-shield](https://img.shields.io/badge/Matplotlib-grey.svg?)
+* [![matplotlib-shield](https://img.shields.io/badge/Matplotlib-dfaeff.svg?)
     ](https://matplotlib.org)
-* [![seaborn-shield](https://img.shields.io/badge/Seaborn-grey?&logoColor=white)
+* [![seaborn-shield](https://img.shields.io/badge/Seaborn-dfaeff?&logo=python-seaborn&logoColor=white)
     ](https://seaborn.pydata.org/)
-* [![scipy-shield](https://img.shields.io/badge/SciPy-grey?&logo=scipy&logoColor=white)
+* [![plotly-shield](https://img.shields.io/badge/Plotly-dfaeff?&logo=Plotly&logoColor=white)
+    ]([https://seaborn.pydata.org/](https://plotly.com/python/))
+* [![scipy-shield](https://img.shields.io/badge/SciPy-dfaeff?&logo=scipy&logoColor=white)
     ](https://scipy.org/)
-* [![sklearn-shield](https://img.shields.io/badge/_-grey?logo=scikitlearn&logoColor=white&label=scikit-learn)
+* [![sklearn-shield](https://img.shields.io/badge/sklearn-dfaeff?logo=scikitlearn&logoColor=white)
     ](https://scikit-learn.org/stable/)
-* [![prophet-shield](https://img.shields.io/badge/_-grey?logo=Facebookprophet&logoColor=white&label=prophet)
+* [![Tensorflow-shield](https://img.shields.io/badge/Tensorflow-dfaeff?logo=tensorflow&logoColor=white)
+    ](https://scikit-learn.org/stable/)
+* [![prophet-shield](https://img.shields.io/badge/FacebookProphet-dfaeff?logoColor=white)
     ](https://scikit-learn.org/stable/)   
-* [![nltk-shield](https://img.shields.io/badge/NLTK-grey?&logo=&logoColor=white)
+* [![nltk-shield](https://img.shields.io/badge/NLTK-dfaeff?&logo=&logoColor=white)
     ](https://textblob.readthedocs.io/en/dev/)
-* [![xgboost-shield](https://img.shields.io/badge/XGBoost-grey?&logo=&logoColor=white)
+* [![xgboost-shield](https://img.shields.io/badge/XGBoost-dfaeff?&logo=XGBoost&logoColor=white)
     ](https://xgboost.readthedocs.io/en/stable/)
-* [![textblob-shield](https://img.shields.io/badge/TextBlob-grey?&logo=&logoColor=white)
+* [![textblob-shield](https://img.shields.io/badge/TextBlob-dfaeff?&logo=&logoColor=white)
     ](https://textblob.readthedocs.io/en/dev/)
 
 
 Dependencies can be installed quickly with just a few lines of code.
+
 ```
 %pip install notebook
 %pip install numpy
@@ -88,40 +99,12 @@ Dependencies can be installed quickly with just a few lines of code.
 %pip install nltk
 %pip install xgboost
 %pip install youtube-search-python
+%pip install tensorflow
+
 ```
 
-# About the data <a name="data"></a>
 
-We scraped tiktok webpage using a third party API called TikAPI using top four categories with top hashtags used in each categories.
-
-## Scope
-
-For exploration and modeling we ignored any repositories featuring a language for which we did not scrape at least 10 samples, as well as any repositories that did not feature a language at all.
-
-## Acquiring
-
-- "env.py" has API key credentials to access the data from tiktok API, youtube API and Instagram API
-- Data acquisition contains 3 platforms: Tiktok, Youtube, Instagram; 5 categories: Fahion & Beauty, Humor, Political Contents, Food, Fitness & Lifestyle
-- Tiktok data is acquired through TikAPI, using search hashtag and search top influencers approach, detailed steps please reference acquire editing
-- Youtube data is acquired through functions inside youtube-search-python 1.6.6 (built-in Python library), detailed steps please reference acquire editing
-- Instagram data is acquired and extracted through an existing dataset. We used automated data extraction to go through 1.5 million json files and condensed useful information into a dataframe.
-
-## Preparing
-
-To prepare the data for exploration and modeling we performed the following steps:
-- All the missing values were dropped as only one row was missing the value
-- Converted date to datetime object
-- Converted object to integer datatype
-- set date as index of the dataframe 
-- Created new column hour, minute, second corresponding to duration and transform them into length in seconds
-- Columns that were deemed unuseful were dropped
-- Split the data into train, validate and test sets 
-    - Train : 64 % of the data
-    - Validate : 16 % of the data
-    - Test : 20 % of the data
-
-## Data Dictionary
-
+## Data Dictionary<a name="data"></a>
 **Variable** |    **Value**    | **Meaning**
 ---|---|---
 <span style="background-color: #ffe0bd">*commentCount*</span> | int | The number of comments on a video
@@ -137,48 +120,72 @@ To prepare the data for exploration and modeling we performed the following step
 <span style="background-color: #ffe0bd">*category*</span> | string obejct | The category the video belongs to
 
 
-# Project Planning <a name="plan"></a>
 
 
-## Exploration
+
+
+
+# Process <a name="process"></a>
+## Acquisition<a name="acquisition"></a>
+
+- "env.py" has API key credentials to access the data from tiktok API, youtube API and Instagram API
+- Data acquisition contains 3 platforms: Tiktok, Youtube, Instagram; 5 categories: Fahion & Beauty, Humor, Political Contents, Food, Fitness & Lifestyle
+- Tiktok data is acquired through TikAPI, using search hashtag and search top influencers approach, detailed steps please reference acquire editing
+- Youtube data is acquired through functions inside youtube-search-python 1.6.6 (built-in Python library), detailed steps please reference acquire editing
+- Instagram data is acquired and extracted through an existing dataset. We used automated data extraction to go through 1.5 million json files and condensed useful information into a dataframe.
+
+## Preparation<a name="preparation"></a>
+
+## Exploration<a name="exploration"></a>
+
 
 ![roughviz](https://user-images.githubusercontent.com/105242871/192079926-96185ad2-505d-4181-8556-ab94c867f2b5.gif)
 
-## Initial Questions
-- Overall distribution of video duration of Tiktok?
-- Is there pattern/seasonality in Tiktok engagement statistics for each category?
-- Is engagement statisticss dependent on category?
-- Does engagement depends on video duration? (Audience’s attention span/algorithm is pushing a certain length of video)
-- Does major political event cause peak in engagement?
 
 
-## Modeling
-- Created a time seriesmodel baseline against which all models will be evaluated.
-- 'X number' of models were created and compared 
+## Modeling<a name="modeling"></a>
+- Last Observed Value (Baseline)
+- Moving Average: The future will look, on average, like recent history.
+- Holt's Linear Trend
+- Previous Cycle
+- Facebook Prophet
+- ARIMA
+- Long Short Term Memory Neural Network
 
 
-# Conclusion
-### Summary
+# Conclusion<a name="conclusion"></a>
+## Key Findings<a name="key_findings"></a>
+▪️ Over **93%** of trending content on TikTok are short(0-15s) & medium(15-60s) videos.
 
-In seeking to predict social media engagement forecasting, we have explored our data thoroughly. \
-We observed word clouds, word frequencies, and ran sentiment analyses in order to best determine any additional feature engineering that would improve our model. Although we were not able to identify any additional significant features to engineer from this exploration, we were able to identify problem areas and eliminate a host of stopwords which resulted in improved modeling.
+▪️ Video duration and egagement rate is dependent on the cateogory. For example: humor content have the highest performance with extra-long (>3mins) videos, whereas political content perform the best with short (0-15s) videos.
 
-Additionally, we have created and tested 12 different models on both uncleaned and cleaned and lemmatized data. Our 3 best performing models are:
+▪️ Trending content of all categories on TikTok have **11M** views, **1.4M** likes, **10.7K** comments, and **34.5K** shares on average.
 
-1. Neural Network (not explicitly shown in this final notebook)
-2. SVM Linear
-3. XGBoost Classifier
+▪️ Total engagement of 2-year global trending content of each platform: TikTok is **6x** more than YouTube, and more than **1000x** more than Instagram.
 
-In short, we found that our XGBoost Classifier model performed best on our uncleaned data, resulting in 58% accuracy on our test data. \
-This performance beats our baseline by 115%.
+▪️ TikTok total engagement has increated **980%** from 2019 to Sep 2022.
+
+▪️ TikTok users respond to **major social/political events** significantly. Engagement peak/rise present prior, during, and after time period of the events.
+
+▪️ Trending content creators' follower size has **decreased** since Jan 2021. TikTok's algorithm has been incentivizing **small creators** to push out content.
+
+▪️ Content-description text frequency **DOES NOT** correlate with engagement. There are specific words that drive engagement for each niche. Our natural language processing general linear model predicts word choice 42% more accurate than baseline.
+
+▪️ Facebook Prophet model forecast engagement with **57%** improvement compared to baseline.
+
+▪️ Total engagement on TikTok is predicted to increase **27%** within the next year (Oct 2022 - Oct 2023). 
 
 
-### Next Steps
+
+## Next Steps<a name="next_steps"></a>
 
 Despite the overall effectiveness of our best-performing model, there is always room for improvement and optimization.
-If given more time to pursue better results, we could perform further investigation within exploration by:
+We're currently working on future devlopenet including:
 
-1. Estimating each readme's school reading level. Not only would this be interesting as an anecdote, if proven useful, it could be imputed as a new feature to boost the accuracy of our model.
+▪️ Taking a closer look the differences between influencers and common users.
 
-2. Handling ReadMes in a foreign language in a more succinct way. This could be handled more effectively by using a translator to convert all ReadMes into English for potentially better modeling accuracy. 
+▪️ Including more niches/categories into our scope. For example: pets, sports, dance.
 
+▪️ Doing bi-gram & tri-gram analysis on content description as long as the content of comments on videos.
+
+▪️ Getting users' demographic data and analyzing the relatinship of location, user's age, etc. with engagement.
