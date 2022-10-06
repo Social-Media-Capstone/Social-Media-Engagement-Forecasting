@@ -13,24 +13,24 @@ Date: 09/2022 - present
     - [Dependencies](#dependencies)
     - [Data Dictionary](#data)
 
-- [Process](#data)
-    - Planning
-    - Acquisition
-    - Preparation
-    - Exploration
-    - Modeling
+- [Process](#process)
+    - [Acquisition](#acquisition)
+    - [Preparation](#preparation)
+    - [Exploration](#exploration)
+    - [Modeling](#modeling)
     
 - [Conclusion](#conclusion)
-    - Key Findings
-    - Recommendation
-    - Future Development
+    - [Key Findings](#key_findings)
+    - [Future Development](#next_steps)
 
 
 # Project Description <a name="project_desc"></a>
-TikTok, a video sharing social media platform, funded in 2016 has gained tremedous amount of popularity over the past few years.
-(EDITING...)
+TikTok, a video sharing and relatively new social media platform (funded in 2016), has gained tremendous amount of popularity over the past few years. Understanding their "success metric" and knowing how to attract engagement is extremely important for business and individuals who want to develop their presence on there.
+
+Along with other deliveralbes, a [web APP](https://m3redithw-streamlit-home-4vvfud.streamlitapp.com/) with interactive dashboard is developed as an additional component to the project for both technical and non-technical skate-holders to grasp the key findings.
 
 ## Business Goal<a name="business_goal"></a>
+We used time series models to forecast engagement over time, along with natural language processing regression models to predict the key words that are likely to generate viral content. E-commerce, retail businesses, influencers, etc. can stratigically utilize ourpredictive model to push out content that would gain the most branded-effect possible with worlwide audience and generate revenue.
 
 ## Initial Questions<a name="questions"></a>
 ▪️ What does trending video's duration distribution look like? Is most vidoes on TikTok short (<15?)
@@ -58,31 +58,31 @@ TikTok, a video sharing social media platform, funded in 2016 has gained tremedo
 
 Before you run this notebook, please ensure you have the below packages installed.
 
-* [![python-shield](https://img.shields.io/badge/Python-3.10-blue?&logo=python&logoColor=white)
+* [![python-shield](https://img.shields.io/badge/Python-dfaeff?&logo=python&logoColor=white)
     ](https://www.python.org/)
-* [![numpy-shield](https://img.shields.io/badge/Numpy-grey?&logo=numpy)
+* [![numpy-shield](https://img.shields.io/badge/Numpy-dfaeff?&logo=NumPy)
     ](https://numpy.org/)
-* [![pandas-shield](https://img.shields.io/badge/Pandas-grey?&logo=pandas)
+* [![pandas-shield](https://img.shields.io/badge/Pandas-dfaeff?&logo=pandas)
     ](https://pandas.pydata.org/)
-* [![matplotlib-shield](https://img.shields.io/badge/Matplotlib-grey.svg?)
+* [![matplotlib-shield](https://img.shields.io/badge/Matplotlib-dfaeff.svg?)
     ](https://matplotlib.org)
-* [![seaborn-shield](https://img.shields.io/badge/Seaborn-grey?&logoColor=white)
+* [![seaborn-shield](https://img.shields.io/badge/Seaborn-dfaeff?&logo=python-seaborn&logoColor=white)
     ](https://seaborn.pydata.org/)
-* [![plotly-shield](https://img.shields.io/badge/Plotly-grey?&logoColor=white)
+* [![plotly-shield](https://img.shields.io/badge/Plotly-dfaeff?&logo=Plotly&logoColor=white)
     ]([https://seaborn.pydata.org/](https://plotly.com/python/))
-* [![scipy-shield](https://img.shields.io/badge/SciPy-grey?&logo=scipy&logoColor=white)
+* [![scipy-shield](https://img.shields.io/badge/SciPy-dfaeff?&logo=scipy&logoColor=white)
     ](https://scipy.org/)
-* [![sklearn-shield](https://img.shields.io/badge/_-grey?logo=scikitlearn&logoColor=white&label=scikit-learn)
+* [![sklearn-shield](https://img.shields.io/badge/sklearn-dfaeff?logo=scikitlearn&logoColor=white)
     ](https://scikit-learn.org/stable/)
-* [![Tensorflow-shield](https://img.shields.io/badge/_-grey?logo=tensorflow&logoColor=white&label=Tensorflow)
+* [![Tensorflow-shield](https://img.shields.io/badge/Tensorflow-dfaeff?logo=tensorflow&logoColor=white)
     ](https://scikit-learn.org/stable/)
-* [![prophet-shield](https://img.shields.io/badge/_-grey?logo=Facebookprophet&logoColor=white&label=prophet)
+* [![prophet-shield](https://img.shields.io/badge/FacebookProphet-dfaeff?logoColor=white)
     ](https://scikit-learn.org/stable/)   
-* [![nltk-shield](https://img.shields.io/badge/NLTK-grey?&logo=&logoColor=white)
+* [![nltk-shield](https://img.shields.io/badge/NLTK-dfaeff?&logo=&logoColor=white)
     ](https://textblob.readthedocs.io/en/dev/)
-* [![xgboost-shield](https://img.shields.io/badge/XGBoost-grey?&logo=&logoColor=white)
+* [![xgboost-shield](https://img.shields.io/badge/XGBoost-dfaeff?&logo=XGBoost&logoColor=white)
     ](https://xgboost.readthedocs.io/en/stable/)
-* [![textblob-shield](https://img.shields.io/badge/TextBlob-grey?&logo=&logoColor=white)
+* [![textblob-shield](https://img.shields.io/badge/TextBlob-dfaeff?&logo=&logoColor=white)
     ](https://textblob.readthedocs.io/en/dev/)
 
 
@@ -99,6 +99,8 @@ Dependencies can be installed quickly with just a few lines of code.
 %pip install nltk
 %pip install xgboost
 %pip install youtube-search-python
+%pip install tensorflow
+
 ```
 
 
@@ -124,7 +126,7 @@ Dependencies can be installed quickly with just a few lines of code.
 
 
 # Process <a name="process"></a>
-## Acquisition
+## Acquisition<a name="acquisition"></a>
 
 - "env.py" has API key credentials to access the data from tiktok API, youtube API and Instagram API
 - Data acquisition contains 3 platforms: Tiktok, Youtube, Instagram; 5 categories: Fahion & Beauty, Humor, Political Contents, Food, Fitness & Lifestyle
@@ -132,16 +134,16 @@ Dependencies can be installed quickly with just a few lines of code.
 - Youtube data is acquired through functions inside youtube-search-python 1.6.6 (built-in Python library), detailed steps please reference acquire editing
 - Instagram data is acquired and extracted through an existing dataset. We used automated data extraction to go through 1.5 million json files and condensed useful information into a dataframe.
 
-## Preparation
+## Preparation<a name="preparation"></a>
 
-## Exploration
+## Exploration<a name="exploration"></a>
 
 
 ![roughviz](https://user-images.githubusercontent.com/105242871/192079926-96185ad2-505d-4181-8556-ab94c867f2b5.gif)
 
 
 
-## Modeling
+## Modeling<a name="modeling"></a>
 - Last Observed Value (Baseline)
 - Moving Average: The future will look, on average, like recent history.
 - Holt's Linear Trend
@@ -151,8 +153,8 @@ Dependencies can be installed quickly with just a few lines of code.
 - Long Short Term Memory Neural Network
 
 
-# Conclusion
-## Key Findings
+# Conclusion<a name="conclusion"></a>
+## Key Findings<a name="key_findings"></a>
 ▪️ Over **93%** of trending content on TikTok are short(0-15s) & medium(15-60s) videos.
 
 ▪️ Video duration and egagement rate is dependent on the cateogory. For example: humor content have the highest performance with extra-long (>3mins) videos, whereas political content perform the best with short (0-15s) videos.
@@ -175,7 +177,7 @@ Dependencies can be installed quickly with just a few lines of code.
 
 
 
-## Next Steps
+## Next Steps<a name="next_steps"></a>
 
 Despite the overall effectiveness of our best-performing model, there is always room for improvement and optimization.
 We're currently working on future devlopenet including:
