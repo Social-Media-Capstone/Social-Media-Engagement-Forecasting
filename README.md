@@ -153,16 +153,37 @@ Dependencies can be installed quickly with just a few lines of code.
 
 # Conclusion
 ## Key Findings
+▪️ Over **93%** of trending content on TikTok are short(0-15s) & medium(15-60s) videos.
 
+▪️ Video duration and egagement rate is dependent on the cateogory. For example: humor content have the highest performance with extra-long (>3mins) videos, whereas political content perform the best with short (0-15s) videos.
+
+▪️ Trending content of all categories on TikTok have **11M** views, **1.4M** likes, **10.7K** comments, and **34.5K** shares on average.
+
+▪️ Total engagement of 2-year global trending content of each platform: TikTok is **6x** more than YouTube, and more than **1000x** more than Instagram.
+
+▪️ TikTok total engagement has increated **980%** from 2019 to Sep 2022.
+
+▪️ TikTok users respond to **major social/political events** significantly. Engagement peak/rise present prior, during, and after time period of the events.
+
+▪️ Trending content creators' follower size has **decreased** since Jan 2021. TikTok's algorithm has been incentivizing **small creators** to push out content.
+
+▪️ Content-description text frequency **DOES NOT** correlate with engagement. There are specific words that drive engagement for each niche. Our natural language processing general linear model predicts word choice 42% more accurate than baseline.
+
+▪️ Facebook Prophet model forecast engagement with **57%** improvement compared to baseline.
+
+▪️ Total engagement on TikTok is predicted to increase **27%** within the next year (Oct 2022 - Oct 2023). 
 
 
 
 ## Next Steps
 
 Despite the overall effectiveness of our best-performing model, there is always room for improvement and optimization.
-If given more time to pursue better results, we could perform further investigation within exploration by:
+We're currently working on future devlopenet including:
 
-1. Estimating each readme's school reading level. Not only would this be interesting as an anecdote, if proven useful, it could be imputed as a new feature to boost the accuracy of our model.
+▪️ Taking a closer look the differences between influencers and common users.
 
-2. Handling ReadMes in a foreign language in a more succinct way. This could be handled more effectively by using a translator to convert all ReadMes into English for potentially better modeling accuracy. 
+▪️ Including more niches/categories into our scope. For example: pets, sports, dance.
 
+▪️ Doing bi-gram & tri-gram analysis on content description as long as the content of comments on videos.
+
+▪️ Getting users' demographic data and analyzing the relatinship of location, user's age, etc. with engagement.
