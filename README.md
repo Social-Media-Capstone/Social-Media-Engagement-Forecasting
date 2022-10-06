@@ -6,43 +6,39 @@ By : **[Brad Gauvin](https://github.com/bradgauvin), [Jess Gardin](https://githu
 Date: 09/2022 - present
 
 ## Table of Content
-- [Project Description](#project_desc)  
-    - [Goals](#goals)
-    - [Deliverables](#deliverables)
-    - [Project Dependencies](#dependencies)
+- [Project Description](#project_desc)
+- [Business Goal]
+- [Deliverables]
+- [Dependencies]
 
-- [About the data](#data)
-    - Scope
-    - Acquiring
-    - Preparing
-    - Data Dictionary
-
-- [Project Planning](#plan)  
+- [Process](#data)
+    - Planning
+    - Acquisition
+    - Preparation
+    - Exploration
+    - Modeling
+    
+- [Conclusion](#conclusion)
+    - Key Findings
+    - Recommendation
+    - Future Development
 
 
 # Project Description <a name="project_desc"></a>
-(EDITING...) 
+TikTok, a video sharing social media platform, funded in 2016 has gained tremedous amount of popularity over the past few years.
+(EDITING...)
 
-## Scenario <a name="scenario"></a>
-
-This project serves as a proof of concept to demonstrate the viability of these types of classification problems using free-form text as an input.
-
-<!-- > __Agile Story__  
-    As a {persona}  
-    I want {feature}  
-    So that {goal}   -->
-
-## Goals <a name="goals"></a>
+# Business Goal
 
 
-### Deliverables <a name="deliverables"></a>
+# Deliverables <a name="deliverables"></a>
 
-- Report notebook titled `final_report.ipynb`
+- Report Notebook titled `final_report.ipynb`
 - Slide presentation for technical and non-technical skateholders
-- Webpage with interactive dashboard
+- Web app with interactive dashboard
 - Project white paper for non-technical audience
 
-## Reproducing this project <a name="requirements"></a>
+# Reproducing this project <a name="requirements"></a>
 
 <!-- Add NLTK and the NLTK downloads -->
 
