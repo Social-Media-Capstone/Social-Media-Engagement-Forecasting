@@ -5,13 +5,13 @@ By : **[Brad Gauvin](https://github.com/bradgauvin), [Jess Gardin](https://githu
 
 Date: 09/2022 - present
 
-## Table of Content
+# Table of Content
 - [Project Description](#project_desc)
-- [Business Goal](#business_goal)
-- [Deliverables](#deliverables)
-- [Dependencies](#dependencies)
-- [Initial Questions](#questions)
-- [Data Dictionary](#data)
+    - [Business Goal](#business_goal)
+    - [Initial Questions](#questions)
+    - [Deliverables](#deliverables)
+    - [Dependencies](#dependencies)
+    - [Data Dictionary](#data)
 
 - [Process](#data)
     - Planning
@@ -30,17 +30,23 @@ Date: 09/2022 - present
 TikTok, a video sharing social media platform, funded in 2016 has gained tremedous amount of popularity over the past few years.
 (EDITING...)
 
-# Business Goal<a name="business_goal"></a>
+## Business Goal<a name="business_goal"></a>
 
+## Initial Questions<a name="questions"></a>
+- Overall distribution of video duration of Tiktok?
+- Is there pattern/seasonality in Tiktok engagement statistics for each category?
+- Is engagement statisticss dependent on category?
+- Does engagement depends on video duration? (Audience’s attention span/algorithm is pushing a certain length of video)
+- Does major political event cause peak in engagement?
 
-# Deliverables <a name="deliverables"></a>
+## Deliverables <a name="deliverables"></a>
 
 - Report Notebook `final_report.ipynb`
 - Web app with interactive dashboard
 - Slide presentation for technical and non-technical skateholders
 - Project white paper for non-technical audience
 
-# Requirements <a name="requirements"></a>
+## Requirements <a name="requirements"></a>
 
 Before you run this notebook, please ensure you have the below packages installed.
 
@@ -84,16 +90,8 @@ Dependencies can be installed quickly with just a few lines of code.
 %pip install youtube-search-python
 ```
 
-# Initial Questions<a name="questions"></a>
-- Overall distribution of video duration of Tiktok?
-- Is there pattern/seasonality in Tiktok engagement statistics for each category?
-- Is engagement statisticss dependent on category?
-- Does engagement depends on video duration? (Audience’s attention span/algorithm is pushing a certain length of video)
-- Does major political event cause peak in engagement?
 
-
-
-# Data Dictionary<a name="data"></a>
+## Data Dictionary<a name="data"></a>
 **Variable** |    **Value**    | **Meaning**
 ---|---|---
 <span style="background-color: #ffe0bd">*commentCount*</span> | int | The number of comments on a video
