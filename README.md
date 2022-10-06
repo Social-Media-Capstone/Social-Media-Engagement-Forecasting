@@ -132,6 +132,13 @@ Dependencies can be installed quickly with just a few lines of code.
 
 
 ## Modeling
+- Last Observed Value (Baseline)
+- Moving Average: The future will look, on average, like recent history.
+- Holt's Linear Trend
+- Previous Cycle
+- Facebook Prophet
+- ARIMA
+- Long Short Term Memory Neural Network
 
 
 # Conclusion
