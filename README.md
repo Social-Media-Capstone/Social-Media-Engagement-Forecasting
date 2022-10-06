@@ -113,7 +113,7 @@ Dependencies can be installed quickly with just a few lines of code.
 
 
 # Process <a name="process"></a>
-### Acquisition
+## Acquisition
 
 - "env.py" has API key credentials to access the data from tiktok API, youtube API and Instagram API
 - Data acquisition contains 3 platforms: Tiktok, Youtube, Instagram; 5 categories: Fahion & Beauty, Humor, Political Contents, Food, Fitness & Lifestyle
@@ -121,25 +121,25 @@ Dependencies can be installed quickly with just a few lines of code.
 - Youtube data is acquired through functions inside youtube-search-python 1.6.6 (built-in Python library), detailed steps please reference acquire editing
 - Instagram data is acquired and extracted through an existing dataset. We used automated data extraction to go through 1.5 million json files and condensed useful information into a dataframe.
 
-### Preparation
+## Preparation
 
-### Exploration
+## Exploration
 
 
 ![roughviz](https://user-images.githubusercontent.com/105242871/192079926-96185ad2-505d-4181-8556-ab94c867f2b5.gif)
 
 
 
-### Modeling
+## Modeling
 
 
 # Conclusion
-### Key Findings
+## Key Findings
 
 
 
 
-### Next Steps
+## Next Steps
 
 Despite the overall effectiveness of our best-performing model, there is always room for improvement and optimization.
 If given more time to pursue better results, we could perform further investigation within exploration by:
