@@ -10,6 +10,8 @@ Date: 09/2022 - present
 - [Business Goal](#business_goal)
 - [Deliverables](#deliverables)
 - [Dependencies](#dependencies)
+- [Initial Questions](#questions)
+- [Data Dictionary](#data)
 
 - [Process](#data)
     - Planning
@@ -82,38 +84,16 @@ Dependencies can be installed quickly with just a few lines of code.
 %pip install youtube-search-python
 ```
 
-# About the data <a name="data"></a>
+# Initial Questions<a name="questions"></a>
+- Overall distribution of video duration of Tiktok?
+- Is there pattern/seasonality in Tiktok engagement statistics for each category?
+- Is engagement statisticss dependent on category?
+- Does engagement depends on video duration? (Audience’s attention span/algorithm is pushing a certain length of video)
+- Does major political event cause peak in engagement?
 
-We scraped tiktok webpage using a third party API called TikAPI using top four categories with top hashtags used in each categories.
 
-## Scope
 
-For exploration and modeling we ignored any repositories featuring a language for which we did not scrape at least 10 samples, as well as any repositories that did not feature a language at all.
-
-## Acquiring
-
-- "env.py" has API key credentials to access the data from tiktok API, youtube API and Instagram API
-- Data acquisition contains 3 platforms: Tiktok, Youtube, Instagram; 5 categories: Fahion & Beauty, Humor, Political Contents, Food, Fitness & Lifestyle
-- Tiktok data is acquired through TikAPI, using search hashtag and search top influencers approach, detailed steps please reference acquire editing
-- Youtube data is acquired through functions inside youtube-search-python 1.6.6 (built-in Python library), detailed steps please reference acquire editing
-- Instagram data is acquired and extracted through an existing dataset. We used automated data extraction to go through 1.5 million json files and condensed useful information into a dataframe.
-
-## Preparing
-
-To prepare the data for exploration and modeling we performed the following steps:
-- All the missing values were dropped as only one row was missing the value
-- Converted date to datetime object
-- Converted object to integer datatype
-- set date as index of the dataframe 
-- Created new column hour, minute, second corresponding to duration and transform them into length in seconds
-- Columns that were deemed unuseful were dropped
-- Split the data into train, validate and test sets 
-    - Train : 64 % of the data
-    - Validate : 16 % of the data
-    - Test : 20 % of the data
-
-## Data Dictionary
-
+# Data Dictionary<a name="data"></a>
 **Variable** |    **Value**    | **Meaning**
 ---|---|---
 <span style="background-color: #ffe0bd">*commentCount*</span> | int | The number of comments on a video
@@ -129,35 +109,36 @@ To prepare the data for exploration and modeling we performed the following step
 <span style="background-color: #ffe0bd">*category*</span> | string obejct | The category the video belongs to
 
 
-# Project Planning <a name="plan"></a>
 
 
-## Exploration
+
+
+
+# Process <a name="process"></a>
+### Acquisition
+
+- "env.py" has API key credentials to access the data from tiktok API, youtube API and Instagram API
+- Data acquisition contains 3 platforms: Tiktok, Youtube, Instagram; 5 categories: Fahion & Beauty, Humor, Political Contents, Food, Fitness & Lifestyle
+- Tiktok data is acquired through TikAPI, using search hashtag and search top influencers approach, detailed steps please reference acquire editing
+- Youtube data is acquired through functions inside youtube-search-python 1.6.6 (built-in Python library), detailed steps please reference acquire editing
+- Instagram data is acquired and extracted through an existing dataset. We used automated data extraction to go through 1.5 million json files and condensed useful information into a dataframe.
+
+### Preparation
+
+### Exploration
+
 
 ![roughviz](https://user-images.githubusercontent.com/105242871/192079926-96185ad2-505d-4181-8556-ab94c867f2b5.gif)
 
-## Initial Questions
-- Overall distribution of video duration of Tiktok?
-- Is there pattern/seasonality in Tiktok engagement statistics for each category?
-- Is engagement statisticss dependent on category?
-- Does engagement depends on video duration? (Audience’s attention span/algorithm is pushing a certain length of video)
-- Does major political event cause peak in engagement?
 
 
-## Modeling
-- Created a time series model baseline against which all models will be evaluated.
-- 'X number' of models were created and compared 
+### Modeling
 
 
 # Conclusion
-### Summary
-
-In seeking to predict social media engagement forecasting, we have explored our data thoroughly. \
-We observed word clouds, word frequencies, and ran sentiment analyses in order to best determine any additional feature engineering that would improve our model. 
+### Key Findings
 
 
-In short, we found that our XGBoost Classifier model performed best on our uncleaned data, resulting in 58% accuracy on our test data. \
-This performance beats our baseline by 115%.
 
 
 ### Next Steps
