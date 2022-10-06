@@ -58,7 +58,7 @@ TikTok, a video sharing social media platform, funded in 2016 has gained tremedo
 
 Before you run this notebook, please ensure you have the below packages installed.
 
-* [![python-shield](https://img.shields.io/badge/Python-3-blue?&logo=python&logoColor=white)
+* [![python-shield](https://img.shields.io/badge/Python-3.10-blue?&logo=python&logoColor=white)
     ](https://www.python.org/)
 * [![numpy-shield](https://img.shields.io/badge/Numpy-grey?&logo=numpy)
     ](https://numpy.org/)
@@ -73,6 +73,8 @@ Before you run this notebook, please ensure you have the below packages installe
 * [![scipy-shield](https://img.shields.io/badge/SciPy-grey?&logo=scipy&logoColor=white)
     ](https://scipy.org/)
 * [![sklearn-shield](https://img.shields.io/badge/_-grey?logo=scikitlearn&logoColor=white&label=scikit-learn)
+    ](https://scikit-learn.org/stable/)
+* [![Tensorflow-shield](https://img.shields.io/badge/_-grey?logo=tensorflow&logoColor=white&label=Tensorflow)
     ](https://scikit-learn.org/stable/)
 * [![prophet-shield](https://img.shields.io/badge/_-grey?logo=Facebookprophet&logoColor=white&label=prophet)
     ](https://scikit-learn.org/stable/)   
