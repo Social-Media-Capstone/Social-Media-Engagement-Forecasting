@@ -77,6 +77,7 @@ Before you run this notebook, please ensure you have the below packages installe
 
 
 Dependencies can be installed quickly with just a few lines of code.
+
 ```
 %pip install notebook
 %pip install numpy
