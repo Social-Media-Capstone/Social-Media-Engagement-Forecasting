@@ -10,7 +10,7 @@ Date: 09/2022 - present
     - [Business Goal](#business_goal)
     - [Initial Questions](#questions)
     - [Deliverables](#deliverables)
-    - [Dependencies](#dependencies)
+    - [Requirements](#requirements)
     - [Data Dictionary](#data)
 
 - [Process](#process)
