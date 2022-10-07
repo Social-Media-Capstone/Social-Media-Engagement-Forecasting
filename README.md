@@ -128,11 +128,17 @@ Dependencies can be installed quickly with just a few lines of code.
 # Process <a name="process"></a>
 ## Acquisition<a name="acquisition"></a>
 
-- "env.py" has API key credentials to access the data from tiktok API, youtube API and Instagram API
-- Data acquisition contains 3 platforms: Tiktok, Youtube, Instagram; 5 categories: Fahion & Beauty, Humor, Political Contents, Food, Fitness & Lifestyle
-- Tiktok data is acquired through TikAPI, using search hashtag and search top influencers approach, detailed steps please reference acquire editing
-- Youtube data is acquired through functions inside youtube-search-python 1.6.6 (built-in Python library), detailed steps please reference acquire editing
-- Instagram data is acquired and extracted through an existing dataset. We used automated data extraction to go through 1.5 million json files and condensed useful information into a dataframe.
+- Data acquisition contains 3 platforms: **TikTok**, **Youtube**, **Instagram**; 5 categories: Fahion & Beauty, Humor, Political Contents, Food, Fitness & Lifestyle
+
+- Tiktok data is acquired through TikAPI, using search hashtag and search top influencers approach, detailed steps please reference [**acquisition**](https://github.com/Social-Media-Capstone/Social-Media-Engagement-Forecasting/tree/main/acquisition)
+
+- Youtube data is acquired through `youtube-search-python 1.6.6` (built-in Python library), detailed steps please reference [**acquisition**](https://github.com/Social-Media-Capstone/Social-Media-Engagement-Forecasting/tree/main/acquisition)
+
+- Instagram data is acquired and extracted through a confidential source and Instagram Graph API. If you're interested in the data source, please contact [**Meredith Wang**](wang.meredith09@gmail.com) directly
+
+- Created `env.py` that contains API key credentials to access the data from TikTok API, and Instagram Graph API
+
+- Created `acquire.py` file that contains functions for data acuiqisiont
 
 ## Preparation<a name="preparation"></a>
 
