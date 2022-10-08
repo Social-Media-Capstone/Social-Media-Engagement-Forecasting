@@ -155,8 +155,13 @@ Dependencies can be installed quickly with just a few lines of code.
 
 
 ![roughviz](https://user-images.githubusercontent.com/105242871/192079926-96185ad2-505d-4181-8556-ab94c867f2b5.gif)
+- Addressed initial questions to find what are the key features that drive engagement
 
+- Explored each feature's correlation with engagement metrics
 
+- Used statistical testing and visualizations to understand relationships between features and find driver of engagement.
+
+- We built interactive dashboard for the audience to grasp the key findings of our exploration.
 
 ## Modeling<a name="modeling"></a>
 - Last Observed Value (Baseline)
