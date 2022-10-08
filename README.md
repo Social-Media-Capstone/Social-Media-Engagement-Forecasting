@@ -141,15 +141,57 @@ Dependencies can be installed quickly with just a few lines of code.
 - Created `acquire.py` file that contains functions for data acuiqisiont
 
 ## Preparation<a name="preparation"></a>
-- **Automated Data Extraction**
+<details>
+<summary><b>Automated Data Extraction</b></summary>
+    
+Data acquired resulted in multiple data structures and nested dictionary. We automated the process to extract useful information from the messy data.
+    
+</details>
 
-- **Missing Values**
+<details>
+<summary><b>Missing Values</b></summary>
+    
+- All the null values are **dropped**
 
-- **Datetime Conversion**
+- We feel comfortable dropping null values because there's only 1 row of missing value out of 1.6 million observations
+    
+</details>
 
-- **Data Encoding**
+<details>
+<summary><b>Data Type Conversion</b></summary>
+    
+- The date and video duration of the data from 3 platforms all follow different format. We converted them into a universal datetime object and numerical data type
 
-- **Text Cleaning**
+- Numercial features are converted to its correct data type
+
+</details>
+
+<details>
+<summary><b>Data Encoding</b></summary>
+    
+- Categorized numerial features into categorical variables
+    
+- Created dummy variables of categorical features
+    
+- Converted wide dataframe format to long format for engagement metric, both long and wide formats are used for explore
+
+</details>
+    
+<details>
+<summary><b>Text Cleaning</b></summary>
+
+- Convert text to all lower case for normality
+	
+- Remove any accented characters, non-ASCII characters
+	
+- Remove special characters
+	
+- Lemmatization
+	
+- Remove stopwords
+
+- TF-IDF to convert text to numerical values based on text importance
+</details>
 
 ## Exploration<a name="exploration"></a>
 
@@ -164,14 +206,20 @@ Dependencies can be installed quickly with just a few lines of code.
 - We built interactive dashboard for the audience to grasp the key findings of our exploration.
 
 ## Modeling<a name="modeling"></a>
+**Time Series Forecasting**
 - Last Observed Value (Baseline)
-- Moving Average: The future will look, on average, like recent history.
+- Moving Average
 - Holt's Linear Trend
 - Previous Cycle
 - Facebook Prophet
 - ARIMA
 - Long Short Term Memory Neural Network
 
+**Natural Language Processing**
+- Linear Regression
+- Random Forest Regressor
+- Lasso-Lars
+- Generalized Linear Model
 
 # Conclusion<a name="conclusion"></a>
 ## Key Findings<a name="key_findings"></a>
