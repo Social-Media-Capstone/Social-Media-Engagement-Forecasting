@@ -141,6 +141,15 @@ Dependencies can be installed quickly with just a few lines of code.
 - Created `acquire.py` file that contains functions for data acuiqisiont
 
 ## Preparation<a name="preparation"></a>
+- **Automated Data Extraction**
+
+- **Missing Values**
+
+- **Datetime Conversion**
+
+- **Data Encoding**
+
+- **Text Cleaning**
 
 ## Exploration<a name="exploration"></a>
 
