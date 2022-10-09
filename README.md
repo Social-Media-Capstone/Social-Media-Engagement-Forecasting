@@ -141,23 +141,85 @@ Dependencies can be installed quickly with just a few lines of code.
 - Created `acquire.py` file that contains functions for data acuiqisiont
 
 ## Preparation<a name="preparation"></a>
+<details>
+<summary><b>Automated Data Extraction</b></summary>
+    
+Data acquired resulted in multiple data structures and nested dictionary. We automated the process to extract useful information from the messy data.
+    
+</details>
+
+<details>
+<summary><b>Missing Values</b></summary>
+    
+- All the null values are **dropped**
+
+- We feel comfortable dropping null values because there's only 1 row of missing value out of 1.6 million observations
+    
+</details>
+
+<details>
+<summary><b>Data Type Conversion</b></summary>
+    
+- The date and video duration of the data from 3 platforms all follow different format. We converted them into a universal datetime object and numerical data type
+
+- Numercial features are converted to its correct data type
+
+</details>
+
+<details>
+<summary><b>Data Encoding</b></summary>
+    
+- Categorized numerial features into categorical variables
+    
+- Created dummy variables of categorical features
+    
+- Converted wide dataframe format to long format for engagement metric, both long and wide formats are used for explore
+
+</details>
+    
+<details>
+<summary><b>Text Cleaning</b></summary>
+
+- Convert text to all lower case for normality
+	
+- Remove any accented characters, non-ASCII characters
+	
+- Remove special characters
+	
+- Lemmatization
+	
+- Remove stopwords
+
+- TF-IDF to convert text to numerical values based on text importance
+</details>
 
 ## Exploration<a name="exploration"></a>
 
 
 ![roughviz](https://user-images.githubusercontent.com/105242871/192079926-96185ad2-505d-4181-8556-ab94c867f2b5.gif)
+- Addressed initial questions to find what are the key features that drive engagement
 
+- Explored each feature's correlation with engagement metrics
 
+- Used statistical testing and visualizations to understand relationships between features and find driver of engagement.
+
+- We built interactive dashboard for the audience to grasp the key findings of our exploration.
 
 ## Modeling<a name="modeling"></a>
+**Time Series Forecasting**
 - Last Observed Value (Baseline)
-- Moving Average: The future will look, on average, like recent history.
+- Moving Average
 - Holt's Linear Trend
 - Previous Cycle
 - Facebook Prophet
 - ARIMA
 - Long Short Term Memory Neural Network
 
+**Natural Language Processing**
+- Linear Regression
+- Random Forest Regressor
+- Lasso-Lars
+- Generalized Linear Model
 
 # Conclusion<a name="conclusion"></a>
 ## Key Findings<a name="key_findings"></a>
